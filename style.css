@@ -1,0 +1,171 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb; /* bg-gray-50 */
+    color: #374151; /* text-gray-800 */
+}
+
+/* Estilos para el menú sticky (encabezado) */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque para el fondo */
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo semitransparente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+/* Estilos para los campos de formulario */
+.form-input {
+    width: 100%;
+    padding: 0.75rem; /* p-3 */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    border-radius: 0.5rem; /* rounded-lg */
+    transition: all 0.3s ease-in-out;
+}
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-2 focus:ring-blue-500 */
+    border-color: transparent; /* focus:border-transparent */
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 0.75rem; /* p-3 */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    border-radius: 0.5rem; /* rounded-lg */
+    transition: all 0.3s ease-in-out;
+    resize: vertical; /* resize-y */
+}
+.form-textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-2 focus:ring-blue-500 */
+    border-color: transparent; /* focus:border-transparent */
+}
+
+/* Estilos para botones primarios */
+.btn-primary {
+    background-color: #2563eb; /* bg-blue-600 */
+    color: #ffffff; /* text-white */
+    padding: 0.75rem 2rem; /* px-8 py-3 */
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #1d4ed8; /* hover:bg-blue-700 */
+    transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* hover:shadow-xl */
+}
+
+/* Estilos para botones secundarios */
+.btn-secondary {
+    background-color: transparent; /* bg-transparent */
+    color: #2563eb; /* text-blue-600 */
+    border: 1px solid #2563eb; /* border border-blue-600 */
+    padding: 0.75rem 2rem; /* px-8 py-3 */
+    border-radius: 9999px; /* rounded-full */
+    transition: all 0.3s ease-in-out;
+}
+.btn-secondary:hover {
+    background-color: #eff6ff; /* hover:bg-blue-50 */
+    transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+}
+
+/* Estilos para iconos SVG */
+.icon-svg {
+    width: 3rem; /* w-12 */
+    height: 3rem; /* h-12 */
+    color: #2563eb; /* text-blue-600 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+/* Estilos para tarjetas de servicio */
+.service-card {
+    padding: 2rem; /* p-8 */
+    background-color: #ffffff; /* bg-white */
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #f3f4f6; /* border border-gray-100 */
+}
+.service-card:hover {
+    transform: scale(1.05); /* hover:scale-105 */
+}
+
+/* Estilos para el efecto de fondo del hero */
+.hero-bg-overlay {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icon {
+    width: 2.25rem; /* w-9 */
+    height: 2.25rem; /* h-9 */
+    color: #4b5563; /* text-gray-600 */
+    transition: all 0.3s ease-in-out;
+}
+.social-icon:hover {
+    color: #2563eb; /* hover:text-blue-600 */
+    transform: scale(1.1); /* hover:scale-110 */
+}
+
+/* Colores específicos para iconos de redes sociales */
+.social-icon.text-blue-700 { color: #1d4ed8; } /* Facebook */
+.social-icon.hover\:text-blue-900:hover { color: #1e3a8a; }
+
+.social-icon.text-pink-600 { color: #db2777; } /* Instagram */
+.social-icon.hover\:text-pink-800:hover { color: #9d174d; }
+
+.social-icon.text-red-600 { color: #dc2626; } /* YouTube */
+.social-icon.hover\:text-red-800:hover { color: #991b1b; }
+
+.social-icon.text-blue-800 { color: #1e40af; } /* LinkedIn */
+.social-icon.hover\:text-blue-900:hover { color: #1e3a8a; }
+
+.social-icon.text-black { color: #000000; } /* TikTok */
+.social-icon.hover\:text-gray-700:hover { color: #374151; }
+
+
+/* Estilos para mensajes de formulario */
+.form-message {
+    padding: 1rem; /* p-4 */
+    margin-top: 1rem; /* mt-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    text-align: center; /* text-center */
+    font-weight: 500; /* font-medium */
+}
+.form-message.success {
+    background-color: #dcfce7; /* bg-green-100 */
+    color: #15803d; /* text-green-700 */
+    border: 1px solid #4ade80; /* border-green-300 */
+}
+.form-message.error {
+    background-color: #fee2e2; /* bg-red-100 */
+    color: #b91c1c; /* text-red-700 */
+    border: 1px solid #f87171; /* border-red-300 */
+}
+
+/* Animaciones para el Hero Section */
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInFromBottom 1s ease-out forwards;
+}
+
+.animation-delay-500 {
+    animation-delay: 0.5s;
+}
+
+.animation-delay-1000 {
+    animation-delay: 1s;
+}

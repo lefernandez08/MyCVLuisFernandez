@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernández Méndez & Asociados - Asesoría Migratoria Experta</title>
+    <!-- Enlace a Tailwind CSS CDN para un diseño moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de la fuente Inter para un look moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Enlace a tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace al CSS del chatbot de n8n -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Barra de Navegación (Header) -->
+    <header class="sticky-header">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-gray-900 tracking-tight">Fernández Méndez & Asociados</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#inicio" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Inicio</a>
+                <a href="#servicios" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Servicios</a>
+                <a href="#elegibilidad" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Elegibilidad <span class="text-yellow-500">✨</span></a>
+                <a href="#nosotros" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Nosotros</a>
+                <a href="#blog" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Blog</a>
+                <a href="#contacto" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Contacto</a>
+                <a href="#contacto" class="btn-primary">Agenda una Cita</a>
+            </div>
+            <!-- Menú hamburguesa para móviles -->
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Página de Inicio (Hero Section) -->
+        <section id="inicio" class="relative h-screen flex items-center justify-center text-center" style="background: linear-gradient(to right, #1E40AF, #3B82F6);">
+            <!-- El fondo ahora es un degradado sutil -->
+            <div class="absolute inset-0 hero-bg-overlay"></div>
+            <div class="relative z-10 text-white p-8 max-w-5xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 animate-fade-in-up">Tu futuro sin fronteras.</h1>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 animate-fade-in-up">Asesoría migratoria experta que te guía hacia el éxito.</h1>
+                <p class="text-xl md:text-2xl mb-10 opacity-0 animate-fade-in-up animation-delay-500">En Fernández Méndez & Asociados, simplificamos el proceso con atención personalizada y resultados garantizados.</p>
+                <a href="#contacto" class="btn-primary text-xl opacity-0 animate-fade-in-up animation-delay-1000">Agenda tu Consulta Gratuita</a>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios Clave -->
+        <section id="servicios" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-16">Nuestros Servicios Clave</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="service-card">
+                        <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Visas de Trabajo</h3>
+                        <p class="text-gray-600 leading-relaxed">Te ayudamos a obtener la visa de trabajo adecuada para tus objetivos profesionales en el extranjero, simplificando cada paso.</p>
+                        <a href="#contacto" class="text-blue-600 hover:underline mt-6 inline-block font-medium">Más información &rarr;</a>
+                    </div>
+                    <div class="service-card">
+                        <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H2m2-2v.01M10 10l4 4m3.828-2.172a4 4 0 00-5.656-5.656l-4 4a4 4 0 105.656 5.656l4-4z"></path></svg>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Residencia Permanente</h3>
+                        <p class="text-gray-600 leading-relaxed">Asesoría completa para asegurar tu residencia permanente, permitiéndote construir una nueva vida con estabilidad.</p>
+                        <a href="#contacto" class="text-blue-600 hover:underline mt-6 inline-block font-medium">Más información &rarr;</a>
+                    </div>
+                    <div class="service-card">
+                        <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H2m2-2v.01M10 10l4 4m3.828-2.172a4 4 0 00-5.656-5.656l-4 4a4 4 0 105.656 5.656l4-4z"></path></svg>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Reunificación Familiar</h3>
+                        <p class="text-gray-600 leading-relaxed">Ayudamos a que tus seres queridos se reúnan contigo en tu nuevo hogar, gestionando todos los trámites necesarios.</p>
+                        <a href="#contacto" class="text-blue-600 hover:underline mt-6 inline-block font-medium">Más información &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección "Por Qué Elegirnos" -->
+        <section id="why-choose-us" class="py-24 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-16">¿Por Qué Elegir Fernández Méndez & Asociados?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-100">
+                        <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Experiencia Comprobada</h3>
+                        <p class="text-gray-600 leading-relaxed">Más de 15 años en el sector migratorio con cientos de casos exitosos que avalan nuestra trayectoria.</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-100">
+                        <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2"></path></svg>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Atención Personalizada</h3>
+                        <p class="text-gray-600 leading-relaxed">Cada cliente es único. Ofrecemos un acompañamiento cercano y adaptado a tus necesidades específicas.</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-100">
+                        <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Resultados Optimizados</h3>
+                        <p class="text-gray-600 leading-relaxed">Trabajamos con diligencia y estrategia para maximizar tus posibilidades de éxito en cada trámite.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Evaluador de Elegibilidad de Visa (Impulsado por Gemini API) -->
+        <section id="elegibilidad" class="py-24 bg-blue-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-12">Evaluador de Elegibilidad de Visa <span class="text-yellow-500">✨</span></h2>
+                <p class="text-lg text-gray-700 mb-10 max-w-3xl mx-auto">Obtén una evaluación preliminar de tus opciones migratorias en segundos. Introduce tus datos y nuestra IA te ofrecerá una guía inicial.</p>
+                <div class="max-w-2xl mx-auto bg-white p-10 rounded-xl shadow-xl border border-blue-100">
+                    <form id="eligibilityForm" class="space-y-6 text-left">
+                        <div>
+                            <label for="nationality" class="block text-gray-700 text-sm font-medium mb-2">Nacionalidad</label>
+                            <input type="text" id="nationality" name="nationality" class="form-input" placeholder="Ej. Dominicana" required>
+                        </div>
+                        <div>
+                            <label for="education" class="block text-gray-700 text-sm font-medium mb-2">Nivel Educativo Más Alto</label>
+                            <select id="education" name="education" class="form-input" required>
+                                <option value="">Selecciona...</option>
+                                <option value="Secundaria">Secundaria</option>
+                                <option value="Técnico">Técnico</option>
+                                <option value="Licenciatura">Licenciatura</option>
+                                <option value="Maestría">Maestría</option>
+                                <option value="Doctorado">Doctorado</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="experience" class="block text-gray-700 text-sm font-medium mb-2">Años de Experiencia Laboral</label>
+                            <input type="number" id="experience" name="experience" class="form-input" placeholder="Ej. 5" min="0" required>
+                        </div>
+                        <div>
+                            <label for="desiredCountry" class="block text-gray-700 text-sm font-medium mb-2">País Deseado para Migrar</label>
+                            <input type="text" id="desiredCountry" name="desiredCountry" class="form-input" placeholder="Ej. Canadá" required>
+                        </div>
+                        <div>
+                            <label for="goal" class="block text-gray-700 text-sm font-medium mb-2">Objetivo (trabajar, estudiar, reunificación familiar, etc.)</label>
+                            <input type="text" id="goal" name="goal" class="form-input" placeholder="Ej. Trabajar como ingeniero" required>
+                        </div>
+                        <button type="submit" class="btn-primary w-full flex items-center justify-center">
+                            Evaluar Elegibilidad <span class="ml-2">✨</span>
+                            <span id="loadingIndicator" class="ml-2 hidden">
+                                <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+                    <div id="eligibilityResults" class="mt-10 p-8 bg-blue-100 border border-blue-300 rounded-lg text-left hidden">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Resultados de la Evaluación Preliminar:</h3>
+                        <p id="assessmentText" class="text-gray-700 leading-relaxed mb-4"></p>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Posibles Vías Sugeridas:</h4>
+                        <ul id="suggestedPathwaysList" class="list-disc list-inside text-gray-600 space-y-1"></ul>
+                        <p class="text-sm text-gray-500 mt-6">Esta es una evaluación preliminar basada en IA y no constituye asesoría legal. Para una evaluación precisa y personalizada, por favor <a href="#contacto" class="text-blue-600 hover:underline font-medium">agenda una consulta</a> con nuestros expertos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios (Carrusel estático) -->
+        <section id="testimonios" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-16">Lo que dicen nuestros clientes</h2>
+                <div class="max-w-4xl mx-auto bg-blue-50 p-10 rounded-xl shadow-xl border border-blue-100">
+                    <p class="text-xl italic text-gray-700 mb-8 leading-relaxed">"Fernández Méndez & Asociados hizo que el proceso de mi visa de trabajo fuera increíblemente sencillo. Su equipo es muy profesional y siempre estuvo disponible para resolver mis dudas. ¡Gracias a ellos, mi sueño de trabajar en el extranjero es una realidad!"</p>
+                    <p class="font-semibold text-gray-800 text-lg">- María G., Visa de Trabajo</p>
+                    <!-- Para un carrusel funcional, se necesitaría JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Acerca de Nosotros -->
+        <section id="nosotros" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-16">Acerca de Fernández Méndez & Asociados</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Nuestra Historia y Misión</h3>
+                        <p class="text-gray-700 leading-relaxed mb-6">En Fernández Méndez & Asociados, nacimos de la pasión por ayudar a las personas a alcanzar sus sueños de vivir y trabajar en un nuevo país. Entendemos que el proceso migratorio puede ser complejo y estresante, por eso nuestra misión es simplificarlo, ofreciendo asesoría legal experta y un acompañamiento cercano en cada etapa.</p>
+                        <p class="text-gray-700 leading-relaxed">Nos comprometemos con la transparencia, la ética y la dedicación para asegurar que cada caso reciba la atención personalizada que merece, buscando siempre el mejor resultado para nuestros clientes.</p>
+                    </div>
+                    <div class="relative w-full h-72 md:h-96 rounded-xl overflow-hidden shadow-2xl">
+                        <img src="https://placehold.co/800x600/A7D9F0/2C5282" alt="Oficina de Fernández Méndez & Asociados" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="mt-24">
+                    <h3 class="text-4xl font-bold text-gray-900 text-center mb-16">Conoce a Nuestro Equipo</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                        <div class="text-center p-8 bg-white rounded-xl shadow-lg border border-gray-100">
+                            <img src="https://placehold.co/180x180/D1E9F4/2C5282?text=Abogado+1" alt="Foto del Abogado 1" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover border-4 border-blue-200 shadow-md">
+                            <h4 class="text-2xl font-semibold text-gray-900">Juan Pérez</h4>
+                            <p class="text-blue-600 mb-3 text-lg font-medium">Abogado Principal</p>
+                            <p class="text-gray-600 text-base leading-relaxed">Especialista en visas de trabajo y residencia, con más de 10 años de experiencia y un enfoque centrado en el cliente.</p>
+                        </div>
+                        <div class="text-center p-8 bg-white rounded-xl shadow-lg border border-gray-100">
+                            <img src="https://placehold.co/180x180/D1E9F4/2C5282?text=Abogada+2" alt="Foto de la Abogada 2" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover border-4 border-blue-200 shadow-md">
+                            <h4 class="text-2xl font-semibold text-gray-900">Ana Rodríguez</h4>
+                            <p class="text-blue-600 mb-3 text-lg font-medium">Asociada Senior</p>
+                            <p class="text-gray-600 text-base leading-relaxed">Experta en reunificación familiar y ciudadanía, dedicada a cada caso con empatía y precisión legal.</p>
+                        </div>
+                        <div class="text-center p-8 bg-white rounded-xl shadow-lg border border-gray-100">
+                            <img src="https://placehold.co/180x180/D1E9F4/2C5282?text=Asesor+3" alt="Foto del Asesor 3" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover border-4 border-blue-200 shadow-md">
+                            <h4 class="text-2xl font-semibold text-gray-900">Carlos Gómez</h4>
+                            <p class="text-blue-600 mb-3 text-lg font-medium">Asesor Migratorio</p>
+                            <p class="text-gray-600 text-base leading-relaxed">Apoya en la preparación de documentos y seguimiento de trámites, garantizando eficiencia y comunicación constante.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-24 text-center">
+                    <h3 class="text-4xl font-bold text-gray-900 mb-12">Nuestros Logros</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                        <div class="p-8 bg-blue-600 text-white rounded-xl shadow-lg">
+                            <p class="text-6xl font-extrabold mb-3">500+</p>
+                            <p class="text-xl">Casos de éxito</p>
+                        </div>
+                        <div class="p-8 bg-blue-600 text-white rounded-xl shadow-lg">
+                            <p class="text-6xl font-extrabold mb-3">15+</p>
+                            <p class="text-xl">Años de experiencia</p>
+                        </div>
+                        <div class="p-8 bg-blue-600 text-white rounded-xl shadow-lg">
+                            <p class="text-6xl font-extrabold mb-3">98%</p>
+                            <p class="text-xl">Tasa de aprobación</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Blog / Recursos -->
+        <section id="blog" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-16">Recursos y Noticias Migratorias</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-blue-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out border border-blue-100">
+                        <img src="https://placehold.co/600x400/C2E7F4/2C5282?text=Blog+Post+1" alt="Imagen del artículo de blog" class="w-full h-56 object-cover">
+                        <div class="p-6 text-left">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">5 Errores Comunes al Solicitar una Visa</h3>
+                            <p class="text-gray-600 text-sm mb-5 leading-relaxed">Evita estos errores cruciales que pueden retrasar o denegar tu solicitud migratoria. Nuestra guía te ayudará a prevenirlos.</p>
+                            <a href="#" class="text-blue-600 hover:underline font-medium">Leer más &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out border border-blue-100">
+                        <img src="https://placehold.co/600x400/C2E7F4/2C5282?text=Blog+Post+2" alt="Imagen del artículo de blog" class="w-full h-56 object-cover">
+                        <div class="p-6 text-left">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Documentos Esenciales para tu Proceso Migratorio</h3>
+                            <p class="text-gray-600 text-sm mb-5 leading-relaxed">Una guía completa y detallada sobre la documentación necesaria para tu trámite migratorio, paso a paso.</p>
+                            <a href="#" class="text-blue-600 hover:underline font-medium">Leer más &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out border border-blue-100">
+                        <img src="https://placehold.co/600x400/C2E7F4/2C5282?text=Blog+Post+3" alt="Imagen del artículo de blog" class="w-full h-56 object-cover">
+                        <div class="p-6 text-left">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Consejos para la Entrevista de la Embajada</h3>
+                            <p class="text-gray-600 text-sm mb-5 leading-relaxed">Prepárate para tu entrevista con nuestros consejos de expertos, aumentando tus posibilidades de éxito.</p>
+                            <a href="#" class="text-blue-600 hover:underline font-medium">Leer más &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Llamada a la Acción Final -->
+        <section class="py-20 bg-blue-600 text-white text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">¿Listo para comenzar tu viaje migratorio?</h2>
+                <p class="text-xl md:text-2xl mb-10">Contáctanos hoy mismo para una asesoría personalizada y sin compromiso.</p>
+                <a href="#contacto" class="btn-secondary bg-white text-blue-600 hover:bg-blue-50">Agenda tu Consulta Ahora</a>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-16">Contáctanos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <!-- Formulario de Contacto Moderno -->
+                    <div class="p-10 bg-white rounded-xl shadow-xl border border-gray-100">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-8">Envíanos un Mensaje</h3>
+                        <!--
+                            IMPORTANTE: Para que este formulario envíe correos electrónicos,
+                            necesitarías un backend (ej. PHP, Node.js, Python) o un servicio
+                            de terceros como Formspree, Netlify Forms, o Getform.io.
+                            Aquí, el 'action' se deja como un placeholder.
+                            Para enviar a lefm08@gmail.com, configurarías tu backend o servicio
+                            para reenviar los datos del formulario a esa dirección.
+                        -->
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Nombre Completo</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="tu.correo@ejemplo.com" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 text-sm font-medium mb-2">Número de Teléfono</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="Ej. +1 809-XXX-XXXX">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Tu Mensaje</label>
+                                <textarea id="message" name="message" rows="6" class="form-textarea" placeholder="Describe brevemente tu consulta migratoria..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">Enviar Mensaje</button>
+                            <div id="formMessage" class="form-message hidden"></div>
+                        </form>
+                    </div>
+
+                    <!-- Información de Contacto -->
+                    <div class="p-10 bg-white rounded-xl shadow-xl border border-gray-100">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-8">Nuestra Información</h3>
+                        <div class="space-y-6 text-gray-700 text-lg">
+                            <p class="flex items-center"><svg class="w-7 h-7 mr-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0L6.343 16.657a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> [Tu Dirección de Oficina], [Tu Ciudad], [Tu País]</p>
+                            <p class="flex items-center"><svg class="w-7 h-7 mr-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg> [Tu Número de Teléfono]</p>
+                            <p class="flex items-center"><svg class="w-7 h-7 mr-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path></svg> lefm08@gmail.com</p>
+                        </div>
+                        <div class="mt-10 flex justify-center space-x-8">
+                            <!-- Facebook -->
+                            <a href="https://facebook.com/ferdezmendez" target="_blank" class="social-icon text-blue-700 hover:text-blue-900">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.588-1.333h2.412v-3.996h-3.228c-3.41 0-4.772 1.7-4.772 4.192v2.308z"/></svg>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="https://instagram.com/ferdezmendez" target="_blank" class="social-icon text-pink-600 hover:text-pink-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.204-.012 3.584-.07 4.85-1.691 4.771-4.919 4.919-4.919.058-1.265.069-1.645.069-4.849 0-3.204.012-3.584-.07-4.85-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.849zM12 0c-3.692 0-4.156.014-5.591.071C2.045.24 0 2.246 0 5.66c-.014 1.435-.071 1.899-.071 5.591s.014 4.156.071 5.591c.173 3.444 2.179 5.45 5.621 5.621 1.435.058 1.899.071 5.591.071s4.156-.014 5.591-.071c3.444-.173 5.45-2.179 5.621-5.621.058-1.435.071-1.899.071-5.591s-.014-4.156-.071-5.591c-.173-3.444-2.179-5.45-5.621-5.621C16.156.014 15.692 0 12 0zm0 6.556A5.444 5.444 0 1017.444 12 5.444 5.444 0 0012 6.556zm0 2.889A2.556 2.556 0 119.444 12 2.556 2.556 0 0112 9.444zm5.333-5.333a1.222 1.222 0 100 2.444 1.222 1.222 0 000-2.444z"/></svg>
+                            </a>
+                            <!-- YouTube -->
+                            <a href="https://youtube.com/ferdezmendez" target="_blank" class="social-icon text-red-600 hover:text-red-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-1.01-.358-2.07-.568-3.18-.568H7.565c-1.11 0-2.17.21-3.18.568C3.27 3.542 2.5 4.312 2.5 5.38v13.24c0 1.068.77 1.838 1.885 2.214 1.01.358 2.07.568 3.18.568h8.87c1.11 0 2.17-.21 3.18-.568 1.115-.376 1.885-1.146 1.885-2.214V5.38c0-1.068-.77-1.838-1.885-2.214zM10 15.5V8.5L16 12l-6 3.5z"/></svg>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="https://linkedin.com/company/ferdezmendez" target="_blank" class="social-icon text-blue-800 hover:text-blue-900">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <!-- TikTok -->
+                            <a href="https://tiktok.com/@ferdezmendez" target="_blank" class="social-icon text-black hover:text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.064 6.446c-.53.078-.962.16-1.393.242v7.197c0 1.25-.972 2.274-2.222 2.274-1.25 0-2.222-1.024-2.222-2.274s.972-2.274 2.222-2.274c.05 0 .098.004.148.006v-2.09c-.048-.002-.098-.006-.148-.006-2.35 0-4.25 1.9-4.25 4.25s1.9 4.25 4.25 4.25 4.25-1.9 4.25-4.25v-7.197c.43-.082.863-.164 1.393-.242.062 1.488.062 2.976 0 4.464.004.098.008.196.008.294 0 2.35-1.9 4.25-4.25 4.25s-4.25-1.9-4.25-4.25c0-.098.004-.196.008-.294-.062-1.488-.062-2.976 0-4.464z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center md:flex md:justify-between md:items-center">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold mb-2">Fernández Méndez & Asociados</h3>
+                <p class="text-gray-400">Tu socio en el camino migratorio.</p>
+            </div>
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-lg font-semibold mb-3">Contacto</h4>
+                <p class="text-gray-400">Calle Gaspar Polanco #30, Villa Vásquez, Monte Cristi, R.D.</p>
+                <p class="text-gray-400">+1 809-579-5301</p>
+                <p class="text-gray-400">lefm08@gmail.com</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-3">Enlaces Rápidos</h4>
+                <ul class="space-y-2">
+                    <li><a href="#servicios" class="text-gray-400 hover:text-blue-400 transition duration-300">Servicios</a></li>
+                    <li><a href="#nosotros" class="text-gray-400 hover:text-blue-400 transition duration-300">Nosotros</a></li>
+                    <li><a href="#blog" class="text-gray-400 hover:text-blue-400 transition duration-300">Blog</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300">Aviso de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500">
+            &copy; 2025 Fernández Méndez & Asociados. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Script del chatbot de n8n -->
+    <!-- Este script debe ser de tipo "module" para que el import de createChat funcione -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js"></script>
+    <!-- Enlace a tu archivo JavaScript personalizado, también debe ser de tipo "module" -->
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
