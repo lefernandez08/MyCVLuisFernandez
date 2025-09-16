@@ -4,142 +4,195 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CV Luis E. Fernández Méndez - Consultor SAP ABAP</title>
-<!-- Fuente premium y paleta elegante -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<meta name="description" content="CV de Luis E. Fernández Méndez, Consultor SAP ABAP con más de 10 años de experiencia en desarrollo y gestión de proyectos SAP." />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 <style>
-  :root {
-    --color-bg: #f9fafb;
-    --color-primary: #0d3b66; /* Azul oscuro premium */
-    --color-secondary: #faa916; /* Amarillo dorado */
-    --color-text-primary: #1e293b; /* Gris oscuro */
-    --color-text-secondary: #475569; /* Gris medio */
-    --color-card-bg: #ffffff;
-    --color-accent: #faa916;
-    --color-border: #e2e8f0;
-    --shadow: rgba(13, 59, 102, 0.15);
-  }
-  /* Reset */
   *, *::before, *::after {
     box-sizing: border-box;
   }
   body {
     margin: 0; padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
     font-family: 'Inter', sans-serif;
-    background-color: var(--color-bg);
-    color: var(--color-text-primary);
     line-height: 1.6;
+    scroll-behavior: smooth;
   }
   a {
-    color: var(--color-primary);
+    color: #2978ff;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   a:hover, a:focus {
-    color: var(--color-secondary);
+    color: #1c5ed6;
     outline: none;
   }
-  h1, h2, h3, h4 {
+  h1, h2, h3 {
     margin: 0 0 0.5em 0;
-    font-weight: 700;
-    color: var(--color-primary);
+    font-weight: 600;
   }
   h1 {
-    font-size: 2.8rem;
-    letter-spacing: -0.02em;
+    font-family: 'Fira Code', monospace;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
     text-align: center;
+    color: #2978ff;
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
   }
   h2 {
-    font-size: 1.9rem;
-    border-bottom: 3px solid var(--color-secondary);
+    font-family: 'Fira Code', monospace;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #2978ff;
     padding-bottom: 0.3em;
-    margin-top: 2.5em;
+    margin-top: 3rem;
+    color: #2978ff;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
   }
   h3 {
-    font-size: 1.3rem;
-    color: var(--color-primary);
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    color: #61dafb;
   }
- .col-roles {
+  .col-roles {
     text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #bbbbbb;
+    margin-bottom: 1rem;
+    font-style: italic;
   }
-
+  .container {
+    max-width: 900px;
+    margin: 2rem auto 4rem auto;
+    padding: 0 1.5rem;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .contact-info a {
+    background: #1e1e1e;
+    color: #2978ff;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    box-shadow: 0 0 8px #2978ff44;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .contact-info a:hover, .contact-info a:focus {
+    background: #2978ff;
+    color: #121212;
+    box-shadow: 0 0 12px #2978ffcc;
+    outline: none;
+  }
   p, ul {
+    color: #ccc;
+    font-size: 1rem;
     margin: 0.5em 0 1em 0;
-    color: var(--color-text-secondary);
     text-align: justify;
   }
   ul {
-    padding-left: 1.5em;
+    padding-left: 1.5rem;
   }
   li {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.6em;
   }
-
-  /* Layout */
-  .container {
-    max-width: 1000px;
-    margin: 2rem auto 4rem auto;
-    background-color: var(--color-card-bg);
-    box-shadow: 0 8px 24px var(--shadow);
-    border-radius: 12px;
-    padding: 3rem 4rem;
-  }
-  .contact-info {
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--color-text-primary);
-    margin-top: 0.25rem;
-    text-align: center;
-  }
-  .contact-info a {
-    margin: 0 0.75rem;
-  }
-
-  /* Experience Articles */
   article {
-    border-left: 4px solid var(--color-secondary);
-    padding-left: 1.5rem;
-    margin-bottom: 1.8rem;
+    background: #1e1e1e;
+    border: 1px solid #2978ff44;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px #000000aa;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  article:hover {
+    box-shadow: 0 8px 24px #2978ffbb;
+    transform: translateY(-5px);
   }
   .job-header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: baseline;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
   }
   .job-title {
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--color-primary);
+    color: #61dafb;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.3rem;
+    font-weight: 600;
   }
   .job-company {
     font-style: italic;
-    color: var(--color-text-secondary);
+    color: #999999;
     font-size: 1rem;
   }
   .job-date {
     font-size: 0.9rem;
-    color: var(--color-text-secondary);
+    color: #777777;
     white-space: nowrap;
   }
-
-  /* Lists with columns for skills, certifications, languages */
   .columns-2 {
-    columns: 2;
+    column-count: 2;
     column-gap: 3rem;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 700px) {
     .columns-2 {
-      columns: 1;
+      column-count: 1;
     }
   }
-
-  /* Footer */
   footer {
     text-align: center;
     font-size: 0.9rem;
-    color: var(--color-text-secondary);
+    color: #555555;
     margin-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  #backToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #2978ff;
+    color: #121212;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 12px #2978ffcc;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+  #backToTop:hover {
+    opacity: 1;
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+    }
+    .job-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+    }
+    .contact-info {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
   }
 </style>
 </head>
@@ -149,11 +202,10 @@
       <h1>Luis E. Fernández Méndez</h1>
       <p class="col-roles"><strong>Consultor-Programador SAP ABAP - FIORI - SAP BTP</strong></p>
       <p class="contact-info">
-        Madrid, España |
-        <a href="tel:+34604222403" aria-label="Teléfono">+34 604 22 24 03</a> |
-        <a href="mailto:lefm08@gmail.com" aria-label="Correo electrónico">lefm08@gmail.com</a> |
-        <a href="http://www.linkedin.com/in/luisefernandez" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a> |
-        <a href="https://www.credly.com/users/luisefernandez/" target="_blank" rel="noopener" aria-label="Credly">Credly</a>
+        <a href="tel:+34604222403" aria-label="Teléfono">📞 +34 604 22 24 03</a>
+        <a href="mailto:lefm08@gmail.com" aria-label="Correo electrónico">✉️ lefm08@gmail.com</a>
+        <a href="http://www.linkedin.com/in/luisefernandez" target="_blank" rel="noopener" aria-label="LinkedIn">🔗 LinkedIn</a>
+        <a href="https://www.credly.com/users/luisefernandez/" target="_blank" rel="noopener" aria-label="Credly">🏅 Credly</a>
       </p>
     </header>
 
@@ -169,7 +221,6 @@
 
     <section>
       <h2>Experiencia Profesional</h2>
-
 
       <article>
         <div class="job-header">
@@ -259,7 +310,7 @@
           <li>Desarrollo de soluciones ABAP para sectores financiero y manufactura.</li>
           <li>Creación de reportes ALV, Smartforms, Dynpros, datos del diccionario ABAP.</li>
           <li>Integraciones vía Web Services (SOAP, WSDL, RFC) y BAPIs.</li>
-          <li>Implementación de mejoras (User   Exits, BADIs, BTEs).</li>
+          <li>Implementación de mejoras (User  Exits, BADIs, BTEs).</li>
           <li>Elaboración de especificaciones técnicas y funcionales.</li>
           <li>Soporte técnico de alto nivel y mentoría a 3 consultores junior.</li>
           <li><strong>Tecnologías:</strong> ABAP, ABAP OO, SAP ERP 6.0, SAP S/4 HANA, SAP FIORI, SAP LOGON.</li>
@@ -291,7 +342,7 @@
           <li>Creación de reportes ALV de los módulos MM, FI, SD y PM.</li>
           <li>Diseño de formularios mediante Smartforms.</li>
           <li>Programación orientada a objetos (ABAP OO).</li>
-          <li>Uso de mejoras (User   -exit, BADIs y BTE).</li>
+          <li>Uso de mejoras (User -exit, BADIs y BTE).</li>
           <li>Asesoramiento telefónico a clientes y encuestas de requisitos funcionales.</li>
           <li><strong>Tecnologías:</strong> ABAP, ABAP OO, SAP ERP 6.0, SAP S/4 HANA, SAP FIORI, SAP LOGON.</li>
         </ul>
@@ -316,7 +367,8 @@
         <li><strong>Aplicación de Ventas Móvil para PacTech Internacional con SAP:</strong> Desarrollo e implementación de una aplicación móvil de ventas para PacTech, completamente interfaciada con SAP. Integración con SAP utilizando APIs y servicios web para sincronización en tiempo real de datos de ventas, inventarios y clientes (SAP SD, SAP MM). Optimización del proceso de ventas, gestión de clientes, validación de precios y descuentos, y actualización de disponibilidad de productos. Resultados: aumento de la eficiencia de ventas, mejor sincronización de datos, optimización de la gestión de inventarios y reducción de errores en pedidos.</li>
         <li><strong>Implementación sistema de notificaciones de alertas de mantenimiento de edificios (DTS Solutions):</strong> Servicio web para recolectar notificaciones de averías y alertas de mantenimiento del sistema BMS y cargarlas en SAP. Creación de procesos de envío de correos masivos a técnicos para seguimiento de averías.</li>
         <li><strong>Proyecto Implementación de estándares DGII 2018 (DTS Solutions):</strong> Adecuaciones y ajustes para la normativa DGII 2018, incluyendo generación, validación y envío de formatos 606, 609, 608 en SAP. Adaptación de Cuentas por Pagar para manejar nuevos rangos de Números de Comprobante Fiscal (NCF).</li>
-        <li><strong>Interfaz de facturación y de cobros (Asociación Dominicana de Rehabilitación):</strong> Desarrollo de servicios web para comunicar sistemas satélites de facturación y cobros con SAP, realizando procesos comerciales y financieros de manera inmediata.</li        <li><strong>Proyectos de adecuamiento y automatización de procesos comerciales y logísticos (MercaSID):</strong> Automatización del proceso de compras (API para aprobaciones móviles, captura de datos y cierre automático). Ampliación en el cálculo de coste de material en la CK11. Mejoras al formulario de factura comercial y reporte de facturas vs notas de créditos. Automatización del proceso de planificación de la necesidad, interfaz de pedido de devolución, seguimiento de ejecución presupuestaria, alta y baja de activos fijos, y bloqueo de materiales.</li>
+        <li><strong>Interfaz de facturación y de cobros (Asociación Dominicana de Rehabilitación):</strong> Desarrollo de servicios web para comunicar sistemas satélites de facturación y cobros con SAP, realizando procesos comerciales y financieros de manera inmediata.</li>
+        <li><strong>Proyectos de adecuamiento y automatización de procesos comerciales y logísticos (MercaSID):</strong> Automatización del proceso de compras (API para aprobaciones móviles, captura de datos y cierre automático). Ampliación en el cálculo de coste de material en la CK11. Mejoras al formulario de factura comercial y reporte de facturas vs notas de créditos. Automatización del proceso de planificación de la necesidad, interfaz de pedido de devolución, seguimiento de ejecución presupuestaria, alta y baja de activos fijos, y bloqueo de materiales.</li>
         <li><strong>Migración de Módulo de Inventario de COBOL a SAP S/4HANA (Grupo Ramos):</strong> Diseño de interfaces de captura de inventario y reportes para validaciones de datos durante la migración de un sistema legacy en COBOL a SAP S/4HANA.</li>
         <li><strong>Otros Proyectos Relevantes:</strong> Planeación de Proyecto de Implementación de SAP S/4HANA Cloud Public Edition. Proyecto de Saneamiento de Perfil de SAP para asegurar la permisología correcta. Implementación de WMS PacTech Internacional integrado con SAP. Integración de APIs para SAP S/4HANA con sistemas como SAP CAR y Sirena GO.</li>
       </ul>
@@ -390,5 +442,12 @@
       &copy; 2025 Luis E. Fernández Méndez - Consultor SAP ABAP
     </footer>
   </main>
+
+  <button id="backToTop" aria-label="Volver arriba" title="Volver arriba">↑</button>
+
+  <script>
+    const btn = document.getElementById('backToTop');
+    btn.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+  </script>
 </body>
 </html>
